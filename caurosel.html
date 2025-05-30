@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Bootstrap Carousel</title> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head> 
+<body> 
+  <div class="container mt-5"> 
+    <h2>Image Carousel</h2> 
+
+    <div id="basicCarousel" class="carousel slide" data-bs-ride="carousel"> 
+      
+      <!-- Indicators (correct Bootstrap 5 style) -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#basicCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#basicCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#basicCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Carousel items -->
+      <div class="carousel-inner"> 
+        <div class="carousel-item active"> 
+          <img src="https://thumbs.dreamstime.com/b/spring-wallpaper-creating-award-winning-photograph-pic-encapsulates-timeless-beauty-tranquility-nature-351384024.jpg" class="d-block w-100" alt="Slide 1"> 
+        </div> 
+        <div class="carousel-item"> 
+          <img src="https://images.unsplash.com/photo-1714544566545-96da265563df?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JlZW5lcnklMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="Slide 2"> 
+        </div> 
+        <div class="carousel-item"> 
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjFxUoYVahXxa5pD0xwGZFUQ36pSGPNc2N5Q&s" class="d-block w-100" alt="Slide 3"> 
+        </div> 
+      </div> 
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#basicCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#basicCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div> 
+  </div> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body> 
+</html>
